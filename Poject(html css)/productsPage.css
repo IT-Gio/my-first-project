@@ -1,0 +1,317 @@
+/* #region header */
+.productSection{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: flex-end;
+    width: 95%;
+    height: auto;
+    animation: appear 2s ease-out;
+    padding: 50px 0px;
+}
+.productTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 300px;
+    padding: 4.5%;
+}
+.productTitle h1{
+    font-family: "extraBold";
+    font-size: 65px;
+}
+.productTitle p{
+    font-family: "normal";
+    font-size: 18px;
+}
+.separation{
+    font-family: "normal";
+}
+.productContent{
+    display: flex;
+    width: 95%;
+    height: auto;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.productGrid{
+    display: grid;
+    width: 45%;
+    height: 100%;
+    grid-template-rows: auto auto;
+    grid-template-columns: 
+        minmax(300px, 490px)
+        minmax(300px, 490px);
+    grid-gap: 10px 12.5%;
+}
+.product{
+    background-color: rgb(0, 0, 0);
+}
+.subtitle, .productTxt{
+    font-family: "normal";
+}
+.productTxt{
+    margin-bottom: 50px;
+}
+.subtitle{
+    margin: 20px 0px;
+    font-size: 30px;
+}
+.lastP{
+    margin-bottom: 100px;
+}
+.productLine{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+.imagePipes{
+    width: 100%;
+    height: 200px;
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./AAAProductPagePipes.avif);
+}
+.imageWrench{
+    width: 100%;
+    height: 200px;
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./AAAProductPageWrench.avif);
+}
+.imageBasin{
+    width: 100%;
+    height: 200px;
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./AAAProductPageBasins.avif);
+}
+.imageHeater{
+    width: 100%;
+    height: 200px;
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./AAAProductPageHeater.avif);
+}
+/* #endregion */
+/* #region contacts */
+.contactSection{
+    display: flex;
+    width: 95%;
+    height: auto;
+    margin: 30px 0px;
+    align-self: center;
+    justify-content: space-between;
+}
+.contactLink{
+    display: flex;
+    width: 40%;
+    height: 100%;
+}
+.appear{
+    animation: appear 2s ease-in-out;
+}
+.linkFlex{
+    display: flex;
+    width: auto;
+    max-height: 100px;
+    overflow: hidden;
+}
+.linkFlex a{
+    font-family: "extraBold";
+    font-size: 45px;
+    line-height: 1;
+}
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    font-family: "normal";
+}
+.numberAndMail{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+.adressFlex{
+    display: flex;
+    width: 100%;
+    margin: 20px 0px;
+    font-size: 12px;
+}
+.policyAndStatement{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.contactInputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.inputsTitle{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.nameAndLastName{
+    display: flex;
+    width: 100%;
+    gap: 4%;
+    margin-top: 20px;
+}
+.inputEmail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.checkBoxLetter{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.submitButton{
+    display: flex;
+    background-color: black;
+    border: 1px solid white ;
+    border-radius: 50px;
+    font-size: 12px;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 40px;
+    transition: 0.4s;
+}
+.submitButton:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.firstName,.lastName{
+    width: 48%;
+}
+.nameAndLastName input, .inputEmail input{
+    background-color: rgb(0, 0, 0);
+    border: 0px;
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+}
+.nameAndLastName input:focus{
+    outline: none; 
+}
+.inputEmail input:focus{
+    outline: none;
+}
+.inputEmail{
+    margin-bottom: 20px;
+}
+.consentTxt{
+    margin-left: 35px;
+    cursor: pointer;
+}
+.customCheck{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 1px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    padding-top: 2px;
+    justify-content: center;
+    cursor: pointer;
+}
+#newsLetter{
+    display: none;
+}
+.customCheck i{
+    font-size: 10px;
+    display: none;
+    transition: 0.2s;
+}
+#newsLetter:checked + .customCheck i{
+    display: flex;
+}
+.wixTxt{
+    font-size: 12px;
+}
+/* #endregion */
+/* #region responsivity */
+@media screen and (max-width:1560px) {
+    .productGrid{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1150px) {
+    .productGrid{
+        width: 75%;
+    }
+}
+@media screen and (max-width:950px) {
+    .productGrid{
+        width: 100%;
+    }
+    .productContent{
+        width: 100%;
+    }
+    .linkFlex a{
+        font-size: 65px !important;
+    }
+}
+@media screen and  (max-width:768px) {
+    .productGrid{
+        width: max-content;
+        grid-template-columns: 
+        minmax(200px, 650px);
+        grid-gap: 0px;
+    }
+    .productContent{
+        justify-content: center;
+    }
+    .productTitle{
+        height: 220px;
+    }
+    .productTitle h1{
+        font-size: 40px;
+    }
+    .lastP{
+        margin-bottom: 50px;
+    }
+
+    
+}
+@media screen and (max-width:650px) {
+    .product{
+        width: 95%;
+        margin-left: 2.5%;
+    }  
+    .linkFlex a{
+        font-size: 30px !important;
+    }
+}
+@media screen and (max-width: 290px) {
+    .homeButton a{
+        font-size: 12px;
+    }
+    .productTitle h1{
+        font-size: 30px;
+    }
+    
+}
+/* #endregion */

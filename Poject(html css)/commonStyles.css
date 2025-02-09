@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+    overflow: visible;
+}
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+/* #region navigation */
+.navigation{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+.navBar{
+    display: flex;
+    width: 34%;
+    justify-content: center;
+    z-index: 10;
+    background-color: black;
+}
+.openMenu{
+    display: flex;
+    align-self: center;
+}
+.homeButton{
+    font-family: "normal";
+    font-size: 16px;
+    width: 34%;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border: 0px;
+}
+.menuFlex{
+    display: flex;
+    width: 100%;
+    padding: 0px 2.5%;
+    height: 55px;
+    justify-content: center;
+    background-color: black;
+    align-self: center;
+    font-family: "normal";
+    z-index: 10;
+    position: sticky;
+} 
+.menu{
+    display: flex;
+    position: sticky;
+}
+.buttonFlex{
+    width: 34%;
+    height: 55px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.buttonFlex button{
+    width: 136px;
+    height: 30px;
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid white;
+    color: rgb(255, 0, 0);
+    border-radius: 50px;
+    transition: 0.6s;
+}
+.buttonFlex button:hover{ 
+    background-color: rgb(255, 255, 255);
+}
+.buttonFlex button:hover a{
+    color: black;
+}
+.closeL1,.closeL2,.closeL3{
+    width: 25px;
+    height: 2.5px;
+    display: flex;
+    background-color: white;
+    z-index: 3;
+}
+.closeMenu{
+    display: none;
+    transition: 0.4s;
+}
+.close:hover{
+    scale: 120%;
+    cursor: pointer;   
+}
+.closeMenuPC{
+    display: none;
+    z-index: 4;
+    position: absolute;
+    top: 0px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.closeMenuPC p:hover{
+    color: rgb(169, 169, 169);
+    text-decoration: underline;
+    transition: 0.4s;
+}
+.closeMenu{
+    display: none;
+}
+.menuLine{
+    display: flex;
+    width: 36px;
+    height: 1.8px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.L2{
+    display: none ;
+}
+.menu li{
+    display: none;
+    position: relative;
+    top: 20%;
+}
+.homeTxt {
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25px;   
+}
+.open:hover{
+    scale: 115%;
+    cursor: pointer;
+    display: flex;
+    transition: 0.6s;
+}
+#check:checked ~ .menu .closeMenu{
+    display: none;
+} 
+#check:checked ~ .menu .closeMenuPC{
+    display: flex;
+}
+#check:checked ~ .menu > li{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+    font-size: 32px;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .menu{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    z-index: 10;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh !important;
+    top: 0px;
+    left: 0px;
+    font-size: 36px;
+}
+/* #endregion */
+/* #region contacts */
+.contactSection{
+    display: flex;
+    width: 95%;
+    height: auto;
+    margin: 30px 0px;
+    align-self: center;
+    justify-content: space-between;
+}
+.contactLink{
+    display: flex;
+    width: 40%;
+    height: 100%;
+}
+.appear{
+    animation: appear 2s ease-in-out;
+}
+.linkFlex{
+    display: flex;
+    width: auto;
+    max-height: 150px;
+    overflow: hidden;
+}
+.linkFlex a{
+    font-family: "extraBold";
+    font-size: 65px;
+    line-height: 1;
+}
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    font-family: "normal";
+}
+.numberAndMail{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+.adressFlex{
+    display: flex;
+    width: 100%;
+    margin: 20px 0px;
+    font-size: 12px;
+}
+.policyAndStatement{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    line-height: 1.9;
+    margin-bottom: 15px;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.contactInputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.inputsTitle{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.nameAndLastName{
+    display: flex;
+    width: 100%;
+    gap: 4%;
+    margin-top: 20px;
+}
+.inputEmail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.checkBoxLetter{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.submitButton{
+    display: flex;
+    background-color: black;
+    border: 1px solid white ;
+    border-radius: 50px;
+    font-size: 12px;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 40px;
+    transition: 0.4s;
+}
+.submitButton:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.firstName,.lastName{
+    width: 48%;
+}
+.nameAndLastName input, .inputEmail input{
+    background-color: rgb(0, 0, 0);
+    border: 0px;
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+}
+.nameAndLastName input:focus{
+    outline: none; 
+}
+.inputEmail input:focus{
+    outline: none;
+}
+.inputEmail{
+    margin-bottom: 20px;
+}
+.consentTxt{
+    margin-left: 35px;
+    cursor: pointer;
+}
+.customCheck{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 1px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    padding-top: 2px;
+    justify-content: center;
+    cursor: pointer;
+}
+#newsLetter{
+    display: none;
+}
+.customCheck i{
+    font-size: 10px;
+    display: none;
+    transition: 0.2s;
+}
+#newsLetter:checked + .customCheck i{
+    display: flex;
+}
+.wixTxt{
+    font-size: 12px;
+}
+.wixTxt a{
+    text-decoration: underline;
+}
+/* #endregion */
+/* #region fonts */
+@font-face {
+    font-family: "normal";
+    src: url(./Qualion-Regular.ttf);
+}
+@font-face {
+    font-family: "medium";
+    src: url(./Qualion-DemiBold.ttf);
+}
+@font-face {
+    font-family: "extraBold";
+    src: url(./Fontspring-DEMO-rocgroteskwide-extrabold.otf);
+}
+/* #endregion */
+/* #region animation keyframes */
+@keyframes image-scale{
+    0%{
+        background-size: 150%;
+    }
+    100%{
+       background-size: 110%;
+    }
+}
+@keyframes image-scale2{
+    0%{
+        background-size: 135%;
+    }
+    100%{
+       background-size: 100%;
+    }
+}
+@keyframes image-scale3{
+    0%{
+        background-size: 130%;
+    }
+    100%{
+       background-size: 100%;
+    }
+}
+@keyframes image-scale4{
+    0%{
+        background-size: 150%;
+    }
+    100%{
+       background-size:120%;
+    }
+}
+@keyframes scroll-image{
+    0%{
+        background-position: center bottom;
+    }
+    130%{
+       background-position: center top;
+    }
+}
+@keyframes scale-shrink-35{
+    50%{
+        scale: 100%; 
+    } 
+    100%{
+        scale: 35%;  
+    } 
+}
+@keyframes scale-shrink-25{
+    50%{
+        scale: 100%; 
+    } 
+    100%{
+        scale: 25%;
+    } 
+}
+@keyframes faucet-y{
+    40%{
+        scale: 100%;
+        transform: translateY(-50%);
+    }
+    100%{
+        scale: 25%;
+        transform: translateY(-100%);
+    }
+}
+@keyframes appear{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes slide-up{
+    0%{
+        transform: translateY(100%);
+      }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+@keyframes responsive-scale{
+    0%{
+        scale: 80%;
+    }
+    100%{
+        scale: 5%;
+    }
+}
+@keyframes responsive-scale2{
+    0%{
+        scale: 50%;
+    }
+    100%{
+        scale: 5%;
+    }
+}
+@keyframes mobile-scale{
+    0%{
+        scale: 40%;
+    }
+    100%{
+        scale: 10%;
+    }
+}
+/* #endregion */
+/* #region responsivity for contacts and navigation on tablet/phone */
+@media screen and (max-width: 768px) {
+    /* #region contacts */
+    .contactSection{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+    .contactLink{
+        width: 100%;
+        height: 0%;
+        padding: 0px 5%;
+    }
+    .contactInfo{
+        width: 100%;
+        height: auto;
+        padding: 50px 5%;
+    }
+    .nameAndLastName{
+        flex-direction: column;
+    }
+    .firstName, .lastName{
+        width: 100%;
+    }
+    .firstName, .lastName{
+        width: 100%;
+    }
+    /* #endregion */
+    /* #region navigation */
+    .buttonFlex{
+        display: none !important;
+    }
+    .L2{
+        display: flex !important;
+        height: 2px !important;
+    }
+    .menuLine{
+        width: 25px !important;
+        height: 2.5px !important;
+        border-radius: 100px !important;
+    }
+    .navigation{
+        position: sticky !important;
+        top: 0% !important;
+        width: 100%;
+    } 
+    .navBar{
+        width: 10% !important;
+    }
+    .homeButton{
+        width: 90% !important;
+        
+    }
+    #check:checked ~ .menu .closeMenuPC{
+        display: none !important;
+    }
+    .openMenu{
+        z-index: 11 !important;
+        width: 30px !important;
+    }
+    #check:checked ~ .openMenu .open .L1{
+        transform: rotate(-45deg) translate(-6px);
+    }
+    #check:checked ~ .openMenu .open  .L2{
+        display: none !important;
+    }
+    #check:checked ~ .openMenu .open .L3{
+        transform: rotate(45deg) translate(-6px);
+    }
+    #check:checked ~ .menu{
+        background-color: rgb(36, 36, 36) !important;
+        height: 100%;
+    }
+    #check:checked ~ .menu li{
+        background-color:transparent;
+    }
+    #check:checked ~ section{
+        display: none;
+    }
+    /* #endregion */
+}
+/* #endregion */

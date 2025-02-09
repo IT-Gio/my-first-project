@@ -1,0 +1,469 @@
+.headerAboutPage {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-start;
+}
+.headerAboutPage .aboutInfo {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3%;
+}
+.headerAboutPage .aboutInfo h1, .headerAboutPage .aboutInfo p {
+  animation: slide-up 0.8s ease-in-out;
+}
+.headerAboutPage .aboutInfo .abtTitle {
+  font-family: "extraBold";
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .headerAboutPage .aboutInfo .abtTitle {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 452px) {
+  .headerAboutPage .aboutInfo .abtTitle {
+    font-size: 30px;
+  }
+}
+.headerAboutPage .aboutInfo .abtTxt {
+  font-family: "normal";
+  font-size: 18px;
+  width: auto;
+}
+.headerAboutPage .aboutInfo .abtTxt br {
+  display: inline;
+}
+@media screen and (max-width: 1660px) {
+  .headerAboutPage .aboutInfo .abtTxt {
+    font-size: 12px;
+    min-height: 250px;
+  }
+  .headerAboutPage .aboutInfo .abtTxt br {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .headerAboutPage .aboutInfo .abtTxt {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerAboutPage .aboutInfo {
+    width: 100%;
+    height: 35vh;
+  }
+  .headerAboutPage .aboutInfo .abtTxt {
+    min-height: 150px;
+  }
+}
+
+.imageSection {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+}
+.imageSection .imageSinkFlex {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  position: relative;
+  padding-left: 3%;
+}
+.imageSection .imageSinkFlex .imageSink {
+  width: 50%;
+  height: 60%;
+  background-size: 110%;
+  background-image: url(./AAAAboutPageSink.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 20%;
+}
+.imageSection .imageTwoMen {
+  width: 57%;
+  height: 100%;
+  background-image: url(./AAAAboutPageTwoMen.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130%;
+  animation: image-scale3 ease-in;
+  animation-timeline: view();
+}
+@media screen and (max-width: 1168px) {
+  .imageSection {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 942px) {
+  .imageSection {
+    height: 34vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .imageSection {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    height: 100vh;
+  }
+  .imageSection .imageTwoMen {
+    width: 100%;
+    height: 50%;
+    background-size: 100%;
+  }
+  .imageSection .imageSinkFlex {
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0%;
+  }
+  .imageSection .imageSinkFlex .imageSink {
+    width: 50%;
+    height: 80%;
+    top: 15%;
+  }
+}
+@media screen and (max-width: 444px) {
+  .imageSection {
+    height: 50vh;
+  }
+  .imageSection .imageSinkFlex {
+    top: 5%;
+    height: 50%;
+  }
+  .imageSection .imageTwoMen {
+    height: 50%;
+  }
+}
+
+.offeringSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-bottom: 200px;
+}
+.offeringSection .offeringFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  padding-left: 3%;
+}
+.offeringSection .offeringFlex h1, .offeringSection .offeringFlex p {
+  animation: slide-up 0.8s ease-in-out;
+}
+.offeringSection .offeringFlex .offeringTitle {
+  font-size: 60px;
+  font-family: "extraBold";
+  margin: 100px 0px 30px 0px;
+}
+.offeringSection .offeringFlex .offeringTxt {
+  font-size: 16px;
+  font-family: "normal";
+  margin-bottom: 200px;
+}
+@media screen and (max-width: 1250px) {
+  .offeringSection .offeringFlex .offeringTxt {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .offeringSection .offeringFlex .offeringTitle {
+    font-size: 35px;
+    margin: 25px 0px 10px 0px;
+  }
+  .offeringSection .offeringFlex .offeringTxt {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+.offeringSection .offerings {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+}
+.offeringSection .offerings .offeringSpace {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  height: auto;
+}
+@media screen and (max-width: 1250px) {
+  .offeringSection .offerings .offeringSpace {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .offeringSection .offerings .offeringSpace {
+    width: 97.5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .offeringSection .offerings .offeringSpace {
+    width: 90.5%;
+  }
+}
+.offeringSection .offerings .offeringSpace .offer {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  height: auto;
+}
+.offeringSection .offerings .offeringSpace .offer h1, .offeringSection .offerings .offeringSpace .offer p {
+  animation: slide-up 0.8s ease-in-out;
+}
+.offeringSection .offerings .offeringSpace .offer div {
+  width: 70px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 25px;
+  animation: appear 3s ease-out;
+}
+.offeringSection .offerings .offeringSpace .offer .logo1 {
+  background-image: url(./AAAAboutPageLogo1.jpeg);
+}
+.offeringSection .offerings .offeringSpace .offer .logo2 {
+  background-image: url(./AAAAboutPageLogo2.jpeg);
+}
+.offeringSection .offerings .offeringSpace .offer .logo3 {
+  background-image: url(./AAAAboutPageLogo3.png);
+}
+.offeringSection .offerings .offeringSpace .offer .offerTitle {
+  font-family: "extraBold";
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 2046px) {
+  .offeringSection .offerings .offeringSpace .offer .offerTitle {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .offeringSection .offerings .offeringSpace .offer .offerTitle {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 452px) {
+  .offeringSection .offerings .offeringSpace .offer .offerTitle {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 250px) {
+  .offeringSection .offerings .offeringSpace .offer .offerTitle {
+    font-size: 20px;
+  }
+}
+.offeringSection .offerings .offeringSpace .offer .offerTxt {
+  font-family: "normal";
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 2046px) {
+  .offeringSection .offerings .offeringSpace .offer .offerTxt {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .offeringSection .offerings .offeringSpace .offer .offerTxt {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 452px) {
+  .offeringSection .offerings .offeringSpace .offer .offerTxt {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .offeringSection .offerings .offeringSpace .offer {
+    width: 90%;
+  }
+  .offeringSection .offerings .offeringSpace .offer .offerTxt {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+  .offeringSection .offerings .offeringSpace .offer .offerTxt br {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .offeringSection {
+    margin-bottom: 0px;
+  }
+}
+
+.ourTeamSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+.ourTeamSection .ourTeamSecText {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.ourTeamSection .ourTeamSecText h1, .ourTeamSection .ourTeamSecText p {
+  animation: slide-up 0.8s ease-in-out;
+}
+.ourTeamSection .ourTeamSecText .ourTeamTitle {
+  font-family: "extraBold";
+  font-size: 75px;
+}
+.ourTeamSection .ourTeamSecText .ourTeamTxt {
+  font-family: "normal";
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .ourTeamSection .ourTeamSecText .ourTeamTitle {
+    font-size: 40px;
+  }
+  .ourTeamSection .ourTeamSecText .ourTeamTxt {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+}
+.ourTeamSection .expertsImages {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  flex-wrap: wrap;
+}
+.ourTeamSection .expertsImages .teamMembers {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  height: auto;
+  text-align: center;
+  line-height: 2;
+}
+.ourTeamSection .expertsImages .teamMembers h1, .ourTeamSection .expertsImages .teamMembers p {
+  animation: slide-up 0.8s ease-in-out;
+}
+.ourTeamSection .expertsImages .teamMembers div {
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  animation: appear 3s ease-out;
+}
+.ourTeamSection .expertsImages .teamMembers .image1 {
+  background-image: url(./AAAAboutPageWorker1.avif);
+}
+.ourTeamSection .expertsImages .teamMembers .image2 {
+  background-image: url(./AAAAboutPageWorker2.avif);
+}
+.ourTeamSection .expertsImages .teamMembers .image3 {
+  background-image: url(./AAAAboutPageWorker3.avif);
+}
+.ourTeamSection .expertsImages .teamMembers .image4 {
+  background-image: url(./AAAAboutPageWorker4.avif);
+}
+.ourTeamSection .expertsImages .teamMembers .image5 {
+  background-image: url(./AAAAboutPageWorker5.avif);
+}
+.ourTeamSection .expertsImages .teamMembers .memberName {
+  font-family: "normal";
+  font-size: 18px;
+}
+@media screen and (max-width: 1488px) {
+  .ourTeamSection .expertsImages .teamMembers .memberName {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 846px) {
+  .ourTeamSection .expertsImages .teamMembers .memberName {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ourTeamSection .expertsImages .teamMembers .memberName {
+    font-size: 25px;
+  }
+}
+.ourTeamSection .expertsImages .teamMembers .workPosition {
+  font-family: "medium";
+  font-size: 22px;
+}
+@media screen and (max-width: 1488px) {
+  .ourTeamSection .expertsImages .teamMembers .workPosition {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 846px) {
+  .ourTeamSection .expertsImages .teamMembers .workPosition {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ourTeamSection .expertsImages .teamMembers .workPosition {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 2300px) {
+  .ourTeamSection .expertsImages {
+    gap: 6%;
+  }
+  .ourTeamSection .expertsImages .teamMembers {
+    width: 12%;
+  }
+}
+@media screen and (max-width: 1736px) {
+  .ourTeamSection .expertsImages {
+    gap: 4%;
+  }
+  .ourTeamSection .expertsImages .teamMembers {
+    width: 14%;
+  }
+}
+@media screen and (max-width: 1488px) {
+  .ourTeamSection .expertsImages .teamMembers {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .ourTeamSection .expertsImages .teamMembers div {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ourTeamSection .expertsImages {
+    flex-direction: column;
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ourTeamSection .expertsImages .teamMembers {
+    width: 250px;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  .ourTeamSection .expertsImages .teamMembers div, .ourTeamSection .expertsImages .teamMembers h1, .ourTeamSection .expertsImages .teamMembers p {
+    width: 250px;
+  }
+  .ourTeamSection .expertsImages .teamMembers div {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ourTeamSection {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .linkFlex a {
+    font-size: 30px !important;
+  }
+}/*# sourceMappingURL=aboutPage.css.map */

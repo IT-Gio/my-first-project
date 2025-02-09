@@ -1,0 +1,914 @@
+/* #region Header Home Page */
+.headerHP{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 30px 2.8%;
+}
+.headerTitle{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-family: "extraBold";
+    line-height: 0.8;
+    font-size: 69px;
+    width: 909px;
+    overflow: hidden;
+}
+.headerTxt{
+    font-family: "normal";
+    font-size: 20px;
+    width: 300px;
+    overflow: hidden;
+}
+.TextAnimation{
+    display: flex;
+    animation: slide-up 2s ease-in-out;
+    width: 300px;
+}
+.headerImages{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+.sinkFlex{
+    display: flex;
+    width: 60%;
+    height: 500px;
+}
+.sink{
+    background-image:url(./AAAsinkIMG.PNG) ;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: image-scale;
+    animation-timeline: view();
+}
+.pipesFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+.pipesCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 49%;
+    height: 600px;
+}
+.pipes{
+    width: 100%;
+    animation: slide-up 1.5s ease-in-out;
+    z-index: 2;
+}
+.pUnderTxt{
+    font-family: "normal";
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0px;
+    animation: appear 2s ease-in-out;
+}
+.pipesButton{
+    display: flex;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 20px 80px;
+    width: 100%;
+    justify-content: center;
+    animation: appear 2s ease-in-out;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.pipesButton a{
+    font-size: 20px;
+    transition: 0.6s;
+}
+.pipesButton:hover{
+    background-color: rgb(255, 255, 255);
+}
+.pipesButton:hover a{
+    color: black;
+}
+/* #endregion*/
+/* #region about section */
+.aboutSection{
+    display: flex;
+    width: 95%;
+    height: auto;
+    align-self: center;
+}
+.aboutTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 441px;
+    height: 500px;
+}
+.aboutSec{
+    font-family: "extraBold";
+    font-size: 60px;
+    line-height: 0.9;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.aboutTxt{
+    font-family: "normal";
+    font-size: 14px;
+    line-height: 1.2;
+    overflow: hidden;
+}
+.sink2{
+    display: flex;
+    background-image: url(./AAAsinkIMG2.PNG);
+    width: 441px;
+    height: 350px;
+    animation: appear 1.5s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.twoMenFlex{
+    display: flex;
+    width: 60%;
+    height: auto;
+}
+.twoMen{
+    background-image: url(./AAA2men.PNG);
+    display: flex;
+    width: 1380px;
+    height: 500px;
+    background-size: 130%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: image-scale2;
+    animation-timeline: view();
+}
+/* #endregion */
+/* #region product section */
+.productSection{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: flex-end;
+    width: 95%;
+    height: auto;
+    animation: appear 2s ease-out;
+    padding: 50px 0px;
+}
+.productTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 15%;
+}
+.productTitle h1{
+    font-family: "extraBold";
+    font-size: 65px;
+}
+.separation{
+    font-family: "normal";
+}
+.productTitle button{
+    width: 250px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 15px 12px;
+    transition: 0.6s;
+}
+.productTitle button a{
+    transition: 0.6s;
+    font-size: 20px;
+    font-family: "normal";
+}
+.productTitle button:hover{
+    background-color: white; 
+    cursor: pointer;
+}
+.productTitle button:hover a{
+    color: black;
+}
+.productArticles{
+    display: flex;
+    width: 100%;
+    height: 75%;
+    justify-content: flex-end;
+}
+.articlesFlex{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 600px;
+    border-top: 2px solid white;
+    justify-content: space-evenly;
+}
+.product h1{
+    font-family: "extraBold";
+    font-size: 25px;
+}
+.product p{
+    font-family: "normal";
+    font-size: 26px;
+}
+/* #endregion */
+/* #region image section */
+.imageSection{
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+}
+.backgroundImage{
+    display: flex;
+    width: 100%;
+    height: 59vh;
+    background-size: 100%;
+    background-image: url(./AAA2men.PNG);
+    animation: scroll-image;
+    animation-timeline: view();
+    justify-content: center;
+    align-items: center;
+}
+.imagesFlex{
+    display: flex;
+    width: 46.45%;
+    height: 100%;
+    position: relative;
+}
+.imgSectionSink{
+    width: 348px;
+    height: 249px;
+    scale: 100%;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    animation: scale-shrink-35;
+    animation-timeline: view();
+}
+.imgSectionFaucet{
+    width: 329px;
+    height: 382px;
+    scale: 100%;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    animation: scale-shrink-25, faucet-y;
+    animation-timeline: view();
+}
+/* #endregion */
+/* #region responsivity */
+@media screen and (max-width: 2560px) {
+    /* header */
+    .title span{
+        width: 900px;
+    }
+    .headerTxt span, .headerTxt{
+        width: 600px;
+    }
+    .headerHP{
+        height: auto;
+    }
+    .sinkFlex{
+        height: 777px;
+    }
+    .pUnderTxt{
+        font-size: 20px;
+    }
+    /* about section */
+    .aboutTitle{
+        width: 44%;
+    }
+    .aboutsec, .aboutSec span{
+        width: 100%;
+        height: 160px;
+    }
+    .aboutTxt{
+        width: 85%;
+        height: 175px;
+    }
+    .aboutTxt >.TextAnimation{
+        width: 100%;
+        font-size: 18px;
+    }
+    .sink2{
+        width: 34%;
+        height: 350px;
+        background-size: cover;
+    }
+    /* product section */
+    .product p{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .product h1{
+        font-size: 46px;
+    }
+    
+}
+@media screen and (max-width: 2266px) {
+    .aboutTxt {
+        height: 250px;
+    }
+    
+}
+@media screen and (max-width: 1914px) {
+    /* about section */
+    .aboutTxt span{
+        font-size: 12.5px;
+    }
+    .aboutSec{
+        font-size: 30px;
+    }
+    /* image section */
+    .imagesFlex{
+        width: 57.45%;
+    }
+    /* header section*/
+    .headerTxt, .headerTxt span{
+        width: 300px;
+    }
+    .sinkFlex{
+        height: 565px;
+    }
+    .pipesFlex{
+        height: 565px;
+    }
+}
+@media screen and (max-width: 1760px) {
+    /* header section */
+    .pipesFlex{
+        height: 450px;
+        width: 45%;
+    }
+    .sinkFlex{
+        height: 450px;
+        width: 55%;
+    }
+    .pipes{
+        height: 50%;
+    }
+    .pUnderTxt{
+        font-size: 16px;
+    }
+    .pipesButton a{
+        font-size: 14px;
+    }
+    .pipesButton, .pUnderTxt,.pipes{
+        width: 70%;
+        align-self: center;
+    }
+    .pipesCont{
+        width: 70%;
+        height: 100%;
+    }
+    /* about section */
+    .aboutTxt span{
+        font-size: 11px;
+    }
+    .sink2{
+        width: 40%;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 1505px) {
+    /* header */
+    .pUnderTxt{
+        font-size: 12.5px;
+    }
+    .sink2{
+        width: 45%;
+        height: 198px;
+    }
+    .pipesButton a{
+        min-width: 100px;
+    }
+    .pipesCont{
+        height: 400px;
+    }
+    .aboutSec span{
+        height: 60px;
+    }
+    .aboutTxt{
+        height: 150px;
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width: 1440px) {
+    /* product section */
+    .product h1{
+        font-size: 30px;
+    }
+    .product{
+        height: auto;
+    }
+    /* image section */
+    .imagesFlex{
+        width: 95%;
+    }
+    /* header section */
+    .headerTitle span{
+        width: 100%;
+        font-size: 80%;
+    }
+    .title{
+        width:100%;
+    }
+    .pipesButton a{
+        font-size: 80%;
+    }
+    .pUnderTxt{
+        font-size: 12px;
+    }
+    .pipesFlex{
+        width: 40%;
+        height: 420px;
+    }
+    .sinkFlex{
+        width: 60%;
+        height: 420px;
+    }
+    /* about section*/
+    .aboutTitle{
+        width: 60%;
+        height: 100%;
+    }
+    .aboutSec span{
+        font-size: 24px;
+    }
+    .aboutTxt span{
+        font-size: 12px;
+    }
+    .sink2{
+        margin-top: 30px;
+        width: 55%;
+        height: 200px;
+    }
+    /* contact section */
+    .contactInfo{
+        width: 50%;
+
+    }
+}
+@media screen and (max-width: 1300px) {
+    /* about section */
+    .aboutTxt span {
+        font-size: 13px;
+    }
+    /* header */
+    .sinkFlex{
+        height: 350px;
+    }
+    .sink{
+        background-position: center bottom;
+    }
+    .pipesCont{
+        height: 271px;
+    }
+    .pipes{
+        width: 50%;
+        height: 250px;
+    }
+    .pipesFlex{
+        height: auto;
+    }
+    .pUnderTxt, .pipesButton a{
+        width: 100%;
+    }
+    .articlesFlex{
+        padding-top: 50px;
+        width: 100%;
+    }
+    .product{
+        width: 42%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    /* header */
+    .sink{
+        background-position: center top;
+    }
+    .sinkFlex,.pipesFlex{
+        width: 50%;
+        height: 280px;
+    }
+    .pipesButton{
+        padding: 8px ;
+    }
+    /* contacts */
+    .linkFlex a{
+        font-size: 35px !important;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .pipes{
+        width: 60%;
+        height: 350px;
+    }   
+    .aboutTxt{
+        height: 130px;
+    }
+    /* header */
+    .headerHP{
+        height: auto;
+    }
+    .title{
+        font-size: 40px;
+        padding-left: 20px;
+        max-width: 768px !important;
+        min-width: 200px !important;
+        
+    }
+    .headerTxt{
+        font-size: 16px;
+        padding-left: 20px;
+    }
+    .headerImages{
+        flex-direction: column;
+        gap: 0px ;
+    }
+    .sinkFlex{
+        width: 100%;
+        height: 500px;
+    }
+    .sink{
+        background-size: 100%;
+        height: 100%;
+    }
+    .pipesFlex{
+        width: 100%;
+        height: auto;
+    }
+    .pipesCont{
+        width: 100%;
+        height: auto;
+        padding-top: 38px;
+    }
+    .pUnderTxt{
+        font-size: 16px;
+        padding: 25px 0px;
+        width: 45%;
+        height: auto;
+    }
+    .pipesButton{
+        padding: 20px 80px;
+        width: 45%;
+    }
+    .pipesButton a{
+        font-size: 20px;
+    }
+    /* about */
+    .aboutSection{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+    .twoMenFlex{
+        width: 100%;
+        padding: 35px 0px;
+    }
+    .aboutTitle{
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        text-align: left;
+        height: auto;
+    }
+    .aboutTitle span{
+        font-size: 50px;
+        height: auto;
+    }
+    .aboutTxt{
+        display: flex;
+        height: auto;
+        width: 60%;
+        margin: 30px 0px;
+    }
+    .aboutTxt > .TextAnimation{
+        font-size: 24px;
+        padding: 0px 20px;
+    }
+    .sink2{
+        height: 420px;
+        width: 60%;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    /* #region navigation */
+
+    .buttonFlex{
+        display: none !important;
+    }
+    .L2{
+        display: flex !important;
+        height: 2px !important;
+    }
+    .menuLine{
+        width: 25px !important;
+        height: 2.5px !important;
+        border-radius: 100px !important;
+    }
+    .navigation{
+        position: sticky !important;
+        top: 0% !important;
+        width: 100%;
+    } 
+    .navBar{
+        width: 10% !important;
+    }
+    .homeButton{
+        width: 90% !important;
+        
+    }
+    #check:checked ~ .menu .closeMenuPC{
+        display: none !important;
+    }
+    .openMenu{
+        z-index: 11 !important;
+        width: 30px !important;
+    }
+    #check:checked ~ .openMenu .open .L1{
+        transform: rotate(-45deg) translate(-6px);
+    }
+    #check:checked ~ .openMenu .open  .L2{
+        display: none !important;
+    }
+    #check:checked ~ .openMenu .open .L3{
+        transform: rotate(45deg) translate(-6px);
+    }
+    #check:checked ~ .menu{
+        background-color: rgb(36, 36, 36) !important;
+        height: 100%;
+    }
+    #check:checked ~ .menu li{
+        background-color:transparent;
+    }
+    #check:checked ~ section{
+        display: none;
+    }
+    /* #endregion */
+    /* #region products */
+    .pipesButton{
+        width: 80%;
+    }
+    .productSection{
+        height: auto;
+        width: 95%; 
+    }
+    .articlesFlex{
+        margin-top: 35px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .product{
+        width: 100%;
+        height: 600px;
+    }
+    .product p{
+        font-size: 26px;
+    }
+    .product h1{
+        font-size: 36px;
+    }
+    .productTitle button{
+        width: 100%;
+        font-size: 20px;
+    }
+    /* #region image section */
+    .backgroundImage{
+        animation: none;
+        flex-direction: column;
+        height: 500px;
+        width: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .imagesFlex{
+        height: 300px;
+        width: 50%;
+        flex-direction: column;
+
+    }
+    .imgSectionSink{
+        align-self: center;
+        left: -2%;
+        scale: 60%;
+        top: 0%;
+        animation: responsive-scale2 ease-in-out;
+        animation-timeline: view();
+    }
+    .imgSectionFaucet{
+        scale: 40%;
+        left: 1%;
+        top:30%;
+        animation: responsive-scale2 ease-in-out;
+        animation-timeline: view();
+    }
+    /* #endregion*/
+    /* header */
+    .sinkFlex{
+        height: 350px;
+    }
+    .pipes{
+        width: 50%;
+        height: 50%;
+    }
+
+}
+@media screen and (max-width: 550px) {
+    /* image section */
+    .imageSection{
+        height: auto;
+    }
+    .imgSectionSink{
+        top: 34px;
+        scale: 40%;
+        animation: mobile-scale ease-in-out;
+        animation-timeline: view();
+    }
+    .imgSectionFaucet{
+        scale: 40%;
+        animation: mobile-scale ease-in-out;
+        animation-timeline: view();
+    }
+    .backgroundImage{
+        height: 315px;
+    }
+    /* header section */
+    .pUnderTxt{
+        width: 55%;
+    }
+    .aboutTxt{
+        width: 70%;
+        height: fit-content;
+    }
+    .sink2{
+        width: 70%;
+        height: 315px;
+    }
+    .aboutTxt span{
+        font-size: 16px !important;
+    }
+    .sinkFlex{
+        height: 270px;
+    }
+    /* product section */
+    .productTitle h1{
+        font-size: 40px;
+    }
+    
+    /* contact section */
+    .contactSection{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 450px) {
+    /* image section */
+    .imgSectionSink{
+        width: 80%;
+        height: auto;
+        top: 10px;
+    }
+    .imgSectionFaucet{
+        width: 80%;
+        height: auto;
+        top: 140px;
+    }
+    .backgroundImage{
+        width: 100%;
+    }
+    .imgSectionFaucet{
+        top: 35%;
+    }
+    .imageSection{
+        height: 40.5vh;
+    }
+    /* about section */
+    .sink2{
+        width: 100%;
+        height: 288px;
+    }
+    .aboutTxt{
+        width: 100%;
+        height: auto;
+    }
+    .aboutTxt .TextAnimation{
+        font-size: 26px;
+    }
+    .aboutSec span{
+        font-size: 40px;
+    }
+    .twoMenFlex{
+        padding-bottom: 0px;
+        height: 100%;
+    }
+    .twoMen{
+        height: 240px;
+        margin-bottom: 20px;
+    }
+    /* header section */
+
+    .headerTxt{
+        width: 100%;
+    }
+    .headerTxt span{
+        width: 100%;
+        font-size: 16px;
+    }
+    .headerHP{
+        padding: 0px;
+    }
+    .title span{
+        font-size: 28px;
+        padding: 15px 0px;
+        width: 100%;
+    }
+    .sinkFlex{
+        height: 200px;
+    }
+    /* contacts */
+    .linkFlex a{
+        font-size: 35px;
+    }
+    .contactSection{
+        margin-top: 20px;
+    }
+    /* products */
+    .product{
+        height: auto;
+    }
+    .product p, .product h1{
+        padding: 20px 0px;
+        gap:30px;
+    }
+    .productTitle h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .imageSection{
+        height: 290px;
+    }
+    .linkFlex a{
+        font-size: 24px !important;
+    }
+
+}
+@media screen and (max-width: 300px) {
+    .pipes{
+        width: 80%;
+    } 
+    .homeButton a{
+        font-size: 14px;
+    }
+    
+    .aboutSec span{
+        font-size: 26px;
+    }
+    .aboutTxt .TextAnimation{
+        font-size: 18px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .productTitle h1{
+        font-size: 26px;
+    }
+    .productSection{
+        padding: 0px;
+    }
+    .articlesFlex{
+        padding-top: 0px;
+    }
+    .imageSection{
+        height: 200px;
+    }
+    .sinkFlex{
+        height: 150px;
+    }
+}
+/* #endregion */

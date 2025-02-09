@@ -1,0 +1,146 @@
+.headerPrivacy{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.privacyText{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: auto;
+}
+.privacyTitle{
+    font-size: 100px;
+    font-family: "extraBold";
+    text-align: center;
+    margin: 45px 0px;
+}
+.privacySegment{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+.Title{
+    font-size: 20px;
+    margin: 10px 0px;
+    font-family: "medium";
+}
+.privacyInfo{
+    font-size: 16px;
+    font-family: "normal";
+}
+.learnMore{
+    margin-bottom: 40px;
+}
+.learnMoreTxt{
+    font-size: 16px;
+    font-family: "normal";
+}
+.learnMoreLink{
+    text-decoration: underline;
+}
+
+/* responsivity */
+@media screen and (max-width: 1850px) {
+    .privacyTitle{
+        font-size: 80px;
+    }
+    .privacyText{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width: 1450px) {
+    .privacyTitle{
+        font-size: 60px;
+    }
+    .Title{
+        font-size: 18px;
+    }
+    .privacyInfo, .learnMoreTxt{
+        font-size: 14px;
+    }
+    .linkFlex a{
+        font-size: 40px;
+    }
+    .privacyText{
+        width: 55%;
+    }
+    
+}
+@media screen and (max-width: 1090px) {
+    .privacyTitle{
+        font-size: 45px;
+    }
+    .privacyInfo, .learnMoreTxt{
+        font-size: 12px;
+    }
+    .privacyText{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width: 830px) {
+    .privacyTitle{
+        font-size: 55px;
+    }
+    .Title{
+        font-size: 20px;
+    }
+    .privacyInfo, .learnMoreTxt{
+        font-size: 16px;
+    }
+    .privacyText{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .privacyTitle{
+        text-align: left;
+    }
+    
+}
+@media screen and (max-width: 685px) {
+    .privacyTitle{
+        font-size: 50px;
+        
+    }
+    .privacyText{
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width: 490px) {
+    .privacyText{
+        width: 100%;
+        padding: 0px 5%;
+    }
+    .privacyTitle{
+        font-size: 36px;
+        margin: 30px 0px 0px 0px;
+    }
+    .Title{
+        font-size: 16px;
+    }
+    .privacyInfo, .learnMoreTxt{
+        font-size: 14px;
+    }
+
+    
+}
+@media screen and (max-width: 350px) {
+    .privacyTitle{
+        font-size: 28px;
+    }
+    .Title{
+        font-size: 14px;
+    }
+    .privacyInfo, .learnMoreTxt{
+        font-size: 12px;
+    }
+    .linkFlex a{
+        font-size: 30px;
+    }
+    
+}

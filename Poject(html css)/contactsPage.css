@@ -1,0 +1,167 @@
+/* header section */
+.contactHeader{
+  display: flex;
+  justify-content: space-between;
+  font-family: "normal";
+
+}
+.contactForm{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 50px 3% 0px;
+}
+.contactTitle{
+  font-family: "extraBold";
+  font-size: 60px;
+}
+.contactTxt{
+  font-size: 20px;
+}
+.headerTxt{
+  font-size: 20px;
+  width: 15%;
+  font-weight: bold;
+  margin: 50px 3% 0px;
+}
+.subjectInput input, .messageInput textarea{
+  background-color: rgb(0, 0, 0);
+  border: 0px;
+  border-bottom: 1px solid white;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  resize: none;
+}
+.subjectInput input{
+  height: 50px;
+}
+.messageInput textarea{
+  height: 100px;
+}
+.subjectInput input:focus, .messageInput textarea:focus{
+  outline: none;
+}
+.headerP{
+  font-size: 18px;
+}
+.formButton{
+  background-color: white;
+  color: black;
+  border: 1px white solid;
+  padding: 20px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 20px 0px 100px ;
+}
+.formButton:hover{
+  background-color: black;
+  color: white;
+}
+/* image Section */
+.imagesection{
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 0% 3%;
+}
+.sinkImage{
+  width: 94%;
+  height: 80vh;
+  justify-self: center;
+  background-image: url(./AAAcontactPageSink.png);
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  animation: image-scale4;
+  animation-timeline: view();
+}
+@media screen and (max-width: 1620px) {
+  .contactForm{
+    width: 40%;
+  }
+  .headerTxt{
+    width: 20%;
+  }
+  
+}
+@media screen and (max-width: 1260px) {
+  .contactHeader{
+    margin: 50px 6% 0px;
+  }
+  .headerTxt{
+    width: 25%;
+  }
+  .linkFlex a{
+    font-size: 40px;
+  }
+  .contactInfo{
+    width: 40%;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  /* header section */
+  .contactHeader{
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactForm, .headerTxt{
+    width: 90%;
+  }
+  .formButton{
+    margin: 20px 0px 70px;
+  }
+  .headerTxt{
+    margin: 0px 3% 40px;
+  }
+  /* image section */
+  .sinkImage{
+    width: 100%;
+    height: 68vh;
+    
+  }
+  /* contact section */
+  .contactInfo{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .contactHeader{
+    margin: 0px 3%;
+  }
+  .contactTitle{
+    font-size: 50px;
+  }
+
+  .sinkImage{
+    height: 54vh;
+  }
+  
+}
+@media screen and (max-width: 425px) {
+  .contactTitle{
+    font-size: 40px;
+  }
+  .headerP{
+    font-size: 14px;
+  }
+  .sinkImage {
+    height: 38vh;
+  }
+  
+}
+@media screen and (max-width: 320px) {
+  .contactTitle{
+    font-size: 32px;
+  }
+  .sinkImage {
+    height: 34vh;
+  }
+  .linkFlex a{
+    font-size: 36px;
+  }
+  
+}
+/* ToDo List: make page responsive,*/

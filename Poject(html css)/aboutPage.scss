@@ -1,0 +1,508 @@
+// #region breakpoints
+$teamImagesBr1: 2300px;
+$teamImagesBr2: 1736px;
+$teamImagesBr3: 1488px;
+$teamImagesBr4: 1250px;
+$teamImagesBr5: 846px;
+$teamImageBr6: 250px;
+
+$offerBr1: 2046px;
+$offerBr2: 1250px;
+$offerBr3: 1095px;
+
+
+$headerBr1: 1660px;
+$headerBr2: 900px;
+
+
+$imageBr1: 1168px;
+$imageBr2: 942px;
+$imageBr3: 444px;
+$imageBr4: 330px;
+
+
+
+$tabletWidth: 768px; 
+$tabletBr1: 452px;
+
+
+$phoneBr1: 250px;
+
+// #endregion
+.headerAboutPage{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+
+    .aboutInfo{
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 3%;
+
+        h1, p{
+            animation: slide-up 0.8s ease-in-out; 
+            }
+        
+        .abtTitle{
+            font-family: "extraBold";
+            font-size: 70px;
+            margin-bottom: 20px;
+            @media screen and (max-width: $tabletWidth) {
+                font-size: 48px;
+                
+            }
+
+            @media screen and (max-width: $tabletBr1) {
+                font-size: 30px;
+                
+            }
+        }
+        .abtTxt{
+            font-family: "normal";
+            font-size: 18px;
+            width: auto;
+
+
+            br{
+                display: inline;
+            }
+            @media screen and (max-width: $headerBr1) {
+                font-size: 12px;
+                min-height: 250px;
+
+                br{
+                    display: none;
+                }  
+            }
+            @media screen and (max-width: $headerBr2) {
+                font-size: 12px;
+            }
+        }   
+        @media screen and (max-width: $tabletWidth){
+            width: 100%;
+            height: 35vh;
+            
+            .abtTxt{
+                min-height: 150px;
+            }
+        }
+    }
+}
+.imageSection{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+
+    .imageSinkFlex{
+        display: flex;
+        width: 40%;
+        height: 100%;
+        position: relative;
+        padding-left: 3%;
+
+        .imageSink{
+            width: 50%;
+            height: 60%;
+            background-size: 110%;
+            background-image: url(./AAAAboutPageSink.avif);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 20%;
+        }
+        
+    }
+    .imageTwoMen{
+        width: 57%;
+        height: 100%;
+        background-image: url(./AAAAboutPageTwoMen.avif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130%;
+        animation: image-scale3 ease-in;
+        animation-timeline: view();
+
+    }
+    @media screen and (max-width: $imageBr1) {
+        height: 40vh;       
+    }
+    @media screen and (max-width: $imageBr2) {
+        height: 34vh;       
+    }
+    @media screen and (max-width: $tabletWidth){
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: 100vh;
+
+        .imageTwoMen{
+            width: 100%;
+            height: 50%;
+            background-size: 100%;
+        }
+        .imageSinkFlex{
+            width: 100%;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0%;
+
+            .imageSink{
+                width: 50%;
+                height: 80%;
+                top: 15%;
+            }
+        }
+    }
+    @media screen and (max-width: $imageBr3) {
+        height: 50vh;
+        .imageSinkFlex{
+            top: 5%;
+            height: 50%;
+        }
+        .imageTwoMen{
+            height: 50%;
+        }
+        
+    }
+
+}
+.offeringSection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-bottom: 200px;
+
+    .offeringFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        padding-left: 3%;
+
+        
+        
+        h1, p{
+            animation: slide-up 0.8s ease-in-out; 
+        }
+
+        .offeringTitle{
+            font-size: 60px;
+            font-family: "extraBold";
+            margin: 100px 0px 30px 0px;
+
+
+        }
+        .offeringTxt{
+            font-size: 16px;
+            font-family: "normal";
+            margin-bottom: 200px;
+           
+            @media screen and (max-width: $offerBr2) {
+                margin-bottom: 100px;
+            }
+        }
+
+
+        @media screen and (max-width: $tabletWidth) {
+            .offeringTitle{
+                font-size: 35px;
+                margin: 25px 0px 10px 0px;
+            }
+            .offeringTxt{
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            
+        }
+    }
+    .offerings{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: auto;
+
+        .offeringSpace{
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+            height: auto;
+
+            @media screen and (max-width: $offerBr2) {
+                width: 55%;
+            }
+            @media screen and (max-width: $offerBr3) {
+                width: 97.5%;
+            }
+            @media screen and (max-width: $tabletWidth) {
+                width: 90.5%;
+                
+            }
+
+            .offer{
+                display: flex;
+                flex-direction: column;
+                width: 98%;
+                height: auto;
+
+                h1, p{
+                animation: slide-up 0.8s ease-in-out;
+
+                }
+
+                div{
+                    width: 70px;
+                    height: 50px;
+                    background-size: cover;
+                    background-position: center;
+                    margin-bottom: 25px;
+                    animation: appear 3s ease-out;
+                }
+                .logo1{
+                    background-image: url(./AAAAboutPageLogo1.jpeg);
+                }
+                .logo2{
+                    background-image: url(./AAAAboutPageLogo2.jpeg);
+                }
+                .logo3{
+                    background-image: url(./AAAAboutPageLogo3.png);
+                }
+                .offerTitle{
+                    font-family: "extraBold";
+                    font-size: 40px;
+                    margin-bottom: 20px;
+
+                    @media screen and (max-width: $offerBr1) {
+                        font-size: 35px;
+                        
+                    }
+                    @media screen and (max-width: $offerBr3) {
+                        font-size: 40px;
+                    }
+                    @media screen and (max-width: $tabletBr1) {
+                        font-size: 25px;
+                        
+                    }
+                    @media screen and (max-width: $phoneBr1) {
+                        font-size: 20px;
+                        
+                    }
+                }
+                .offerTxt{
+                    font-family: "normal";
+                    font-size: 16px;
+                    margin-bottom:100px;
+
+                    @media screen and (max-width: $offerBr1) {
+                        font-size: 11px;
+                    }
+                    @media screen and (max-width: $offerBr3) {
+                        font-size: 16px;
+                    }
+                    @media screen and (max-width: $tabletBr1) {
+                        font-size: 14px;
+                        
+                    }
+                
+                }
+                @media screen and (max-width: $tabletWidth) {
+                    width: 90%;
+
+                    .offerTxt{
+                        font-size: 14px;
+                        margin-bottom: 50px;
+
+                        br{
+                            display: none;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $tabletWidth) {
+        margin-bottom: 0px;
+    }
+}
+.ourTeamSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+
+    .ourTeamSecText{
+        width: 100%;
+        height: auto;
+        text-align: center;
+
+        h1, p{
+            animation: slide-up 0.8s ease-in-out; 
+        }
+        .ourTeamTitle{
+            font-family: "extraBold";
+            font-size: 75px;
+        }
+        .ourTeamTxt{
+            font-family: "normal";
+            font-size: 24px;
+            margin-bottom: 70px;
+        }
+        @media  screen and (max-width: $tabletWidth) {
+            .ourTeamTitle{
+                font-size: 40px;
+            }
+            .ourTeamTxt{
+                font-size: 18px;
+                margin-bottom: 50px;
+            }
+            
+        }
+
+    }
+    .expertsImages{
+        display: flex;
+        justify-content: center;
+        gap: 8%;
+        flex-wrap: wrap;
+
+        
+
+        .teamMembers{
+            display: flex;
+            flex-direction: column;
+            width: 10%;
+            height: auto;
+            text-align: center;
+            line-height: 2;
+
+            h1, p{
+                animation: slide-up 0.8s ease-in-out; 
+            }
+            div{
+                width: 100%;
+                height: 350px;
+                background-position: center;
+                background-size: cover;
+                margin-bottom: 20px;
+                animation: appear 3s ease-out;
+
+            }
+            .image1{
+                background-image: url(./AAAAboutPageWorker1.avif);
+            }
+            .image2{
+                background-image: url(./AAAAboutPageWorker2.avif);
+            }
+            .image3{
+                background-image: url(./AAAAboutPageWorker3.avif);
+            }
+            .image4{
+                background-image: url(./AAAAboutPageWorker4.avif);
+            }
+            .image5{
+                background-image: url(./AAAAboutPageWorker5.avif);
+            }
+            .memberName{
+                font-family: "normal";
+                font-size: 18px;
+                @media screen and (max-width: $teamImagesBr3) {
+                    font-size: 12px;
+                    
+                }
+                @media screen and (max-width: $teamImagesBr5) {
+                    font-size: 10px;
+                }
+                @media screen and (max-width: $tabletWidth) {
+                    font-size: 25px;
+                    
+                }
+            }
+            .workPosition{
+                font-family: "medium";
+                font-size: 22px;
+                @media screen and (max-width: $teamImagesBr3) {
+                    font-size: 15px;
+                }
+                @media screen and (max-width: $teamImagesBr5) {
+                    font-size: 12px;
+                }
+                @media screen and (max-width: $tabletWidth) {
+                    font-size: 30px;
+                    
+                }
+            }
+        
+           
+        }
+        @media screen and (max-width: $teamImagesBr1) {
+            gap: 6%;
+
+            .teamMembers{
+                width: 12%;
+            }  
+        }
+        @media screen and (max-width: $teamImagesBr2){
+            gap: 4%; 
+
+            .teamMembers{
+                width: 14%;
+            }
+
+        }
+        @media screen and (max-width: $teamImagesBr3) {
+            .teamMembers{
+                width: 200px;
+            }
+            
+        }
+        @media screen and (max-width: $teamImagesBr4 ) {
+            .teamMembers{
+                div{
+                    height: 250px;
+                }
+            }   
+        }
+        @media screen and (max-width: $tabletWidth) {
+            flex-direction: column;
+            justify-items: center;
+        }
+        @media screen and (max-width: $tabletWidth) {
+            .teamMembers{
+                width: 250px;
+                align-self: center;
+                margin-bottom: 20px;
+
+                div, h1, p{
+                    width: 250px;
+                }
+
+                div{
+                    height: 300px;
+                }
+            }
+        }
+        
+        
+    }
+    @media screen and (max-width: $tabletWidth) {
+        margin-bottom: 20px
+        
+    }
+    
+}
+.linkFlex{
+    a{
+        @media screen and (max-width: $offerBr2) {
+            font-size: 30px !important;
+        }
+    }
+}
+
+// made responsive until max width 250px
